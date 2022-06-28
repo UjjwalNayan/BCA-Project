@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>World</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+
+        <!--Navigation-->
+        <div class="w3-top">
+         <div class="w3-bar w3-black">
+       
+         <span class="branding w3-bar-item w3-mobile">New7 Wonders Of World</span>
+         <span class="w3-right w3-mobile">
+         <a href="index.html" class="w3-bar-item w3-button w3-mobile w3-hover-blue">Home</a>
+         <a href="wonderscities.html" class="w3-bar-item w3-button w3-mobile w3-hover-blue">New7 Wonders Cities</a>
+         <a href="wondersnature.html" class="w3-bar-item w3-button w3-mobile w3-hover-blue">New7 Wonders Of Nature</a>
+         <a href="about.html" class="w3-bar-item w3-button w3-mobile w3-hover-blue">About</a>
+         </span>
+       
+         </div>
+         </div>
+
+         <div class="content-wrapper">
+         <div class="portfolio-items-wrapper">
+
+         <!--First Wonder-->
+         <div class="portfolio-item-wrapper">
+         <div class="portfolio-img-background" style="background-image: url(img/back1.jpg)"></div>
+         <div class="image-text-wrapper">
+         <div class="subtitle">
+             <a href="china.html">"Great Wall Of China"</a>
+         </div>
+         </div>
+         </div>
+
+         <!--Second Wonder-->
+         <div class="portfolio-item-wrapper">
+         <div class="portfolio-img-background" style="background-image: url(img/back2.jpg)"></div>
+         <div class="image-text-wrapper">
+         <div class="subtitle">
+             <a href="machu.html">"Machu Picchu"</a>
+         </div>
+         </div>
+         </div>
+
+         <!--Third Wonder-->
+         <div class="portfolio-item-wrapper">
+         <div class="portfolio-img-background" style="background-image: url(img/back3.jpg)"></div>
+         <div class="image-text-wrapper">
+         <div class="subtitle">
+            <a href="taj.html">"Taj Mahal"</a>
+         </div>
+         </div>
+         </div>
+
+         <!--Fourth Wonder-->
+         <div class="portfolio-item-wrapper">
+         <div class="portfolio-img-background" style="background-image: url(img/back4.jpg)"></div>
+         <div class="image-text-wrapper">
+         <div class="subtitle">
+            <a href="christ.html">"Christ the Redeemer"</a>
+         </div>
+         </div>
+         </div>
+
+         <!--Fifth Wonder-->
+         <div class="portfolio-item-wrapper">
+         <div class="portfolio-img-background" style="background-image: url(img/back5.jpg)"></div>
+         <div class="image-text-wrapper">
+         <div class="subtitle">
+             <a href="itza.html">"Chichen Itza"</a>
+         </div>
+         </div>
+         </div>
+
+         <!--Sixth Wonder-->
+         <div class="portfolio-item-wrapper">
+         <div class="portfolio-img-background" style="background-image: url(img/back6.jpg)"></div>
+         <div class="image-text-wrapper">
+         <div class="subtitle">
+             <a href="colosseum.html">"Colosseum"</a>
+         </div>
+         </div>
+         </div>
+
+         <!--Seventh Wonder-->
+         <div class="portfolio-item-wrapper">
+         <div class="portfolio-img-background" style="background-image: url(img/back7.jpg)"></div>
+         <div class="image-text-wrapper">
+         <div class="subtitle">
+             <a href="petra.html">"Petra, Jordan"</a>
+         </div>
+         </div>
+         </div>
+         </div>
+         </div>
+         <!--Footer-->
+         <footer class="w3-black w3-padding-xlarge w3-center">
+         <p>Seven Wonders &copy; 2019</p>
+         </footer>
+
+    </body>
+
+    <script>
+
+         const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+          
+         portfolioItems.forEach(portfolioItem => {
+         portfolioItem.addEventListener('mouseover', () => {
+            console.log(portfolioItem.childNodes[1].classList)
+         portfolioItem.childNodes[1].classList.add('img-darken');
+         });
+          
+         portfolioItem.addEventListener('mouseout', () => {
+            console.log(portfolioItem.childNodes[1].classList)
+         portfolioItem.childNodes[1].classList.remove('img-darken');
+         });
+         });
+          
+    </script>
+
+</html>
